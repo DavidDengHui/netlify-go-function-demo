@@ -1,11 +1,4 @@
-module github.com/carlmjohnson/netlify-function-cache-test
-
 go 1.17
-
-require (
-	github.com/carlmjohnson/feed2json v0.0.7
-	github.com/carlmjohnson/gateway v1.20.7
-)
 
 require (
 	github.com/PuerkitoBio/goquery v1.5.0 // indirect
