@@ -1,3 +1,5 @@
+module github.com/carlmjohnson/netlify-function-cache-test
+
 go 1.17
 
 require (
