@@ -21,6 +21,10 @@ func main() {
 		http.Handle("/", http.FileServer(http.Dir("./public")))
 	}
 
+	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "Hello, World")
+	})
+	
 	http.Handle("/api/feed", feed2json.Handler(
 		feed2json.StaticURLInjector("https://news.ycombinator.com/rss"),
 		nil, nil, nil, cacheControlMiddleware))
