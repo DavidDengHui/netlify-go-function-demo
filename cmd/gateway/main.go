@@ -3,10 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
 	"net/http"
-
-	"github.com/carlmjohnson/feed2json"
 	"github.com/carlmjohnson/gateway"
 )
 
