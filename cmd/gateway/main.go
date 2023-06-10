@@ -24,9 +24,6 @@ func main() {
 	http.Handle("/api/feed", feed2json.Handler(
 		feed2json.StaticURLInjector("https://news.ycombinator.com/rss"),
 		nil, nil, nil, cacheControlMiddleware))
-
-	http.Handle("/api/hello", "<h1>Hello, Go!</h1>")
-
 	log.Fatal(listener(portStr, nil))
 }
 
