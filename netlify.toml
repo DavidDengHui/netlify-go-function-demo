@@ -4,10 +4,9 @@
   publish = "public"
 
 [build.environment]
-  GO_IMPORT_PATH = "github.com/DavidDengHui/netlify-go-function-demo"
   GO111MODULE = "on"
 
 [[redirects]]
   from = "/api/*"
-  to = "/.netlify/functions/gateway/:splat"
+  to = "/.netlify/functions/gateway/"
   status = 200
